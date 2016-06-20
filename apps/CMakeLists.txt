@@ -36,4 +36,8 @@ add_subdirectory(prebundle)
 add_subdirectory(scene2pset)
 add_subdirectory(sceneupgrade)
 add_subdirectory(sfmrecon)
-add_subdirectory(umve)
+
+if(MVE_BUILD_UMVE)
+  add_subdirectory(umve)
+endif()
+

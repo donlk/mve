@@ -17,6 +17,7 @@ endif()
 
 set(MVE_BUILD_WITH_SSE2 yes CACHE BOOL "Build MVE with SSE2 support")
 set(MVE_BUILD_WITH_SSE3 yes CACHE BOOL "Build MVE with SSE3 support")
+set(MVE_BUILD_UMVE no CACHE BOOL "Build UMVE module")
 
 if(MVE_BUILD_WITH_SSE2)
 	add_definitions(-D__SSE2__)
